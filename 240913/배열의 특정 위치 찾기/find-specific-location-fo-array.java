@@ -19,6 +19,7 @@ public class Main {
         }
         avg = avg/cnt;
         
-        System.out.print(sum + " " + avg);
+        System.out.print(sum + " ");
+        System.out.printf("%.1f", avg);
     }
 }
