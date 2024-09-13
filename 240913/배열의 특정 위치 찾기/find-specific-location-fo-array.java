@@ -9,17 +9,16 @@ public class Main {
         int cnt = 0;
         for(int i = 0; i<10; i++){
             int a = sc.nextInt();
-            if (i % 2 == 1) {
+            if ((i+1) % 2 == 0) {
                 sum += a;
             }
-            if (a % 3 == 0) {
+            if ((i+1) % 3 == 0) {
                 avg += a;
                 cnt++;
             }
         }
         avg = avg/cnt;
-        
-        System.out.print(sum + " ");
-        System.out.printf("%.1f", avg);
+    
+        System.out.printf("%d %.1f", sum, avg);
     }
 }
